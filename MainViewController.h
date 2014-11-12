@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  MainViewController.h
 //  StartingArea
 //
 //  Created by Josh Imbriani on 11/12/14.
@@ -8,8 +8,7 @@
 
 #import <Cocoa/Cocoa.h>
 
-@interface ViewController : NSViewController
+@interface MainViewController : NSViewController <NSTableViewDelegate, NSTableViewDataSource>
 
 
 @end
-

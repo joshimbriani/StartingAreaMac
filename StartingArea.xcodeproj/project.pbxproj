@@ -9,11 +9,11 @@
 /* Begin PBXBuildFile section */
 		03ADE08D1A13CA6600164BCB /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 03ADE08C1A13CA6600164BCB /* AppDelegate.m */; };
 		03ADE08F1A13CA6600164BCB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 03ADE08E1A13CA6600164BCB /* main.m */; };
-		03ADE0921A13CA6600164BCB /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 03ADE0911A13CA6600164BCB /* ViewController.m */; };
 		03ADE0951A13CA6600164BCB /* StartingArea.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 03ADE0931A13CA6600164BCB /* StartingArea.xcdatamodeld */; };
 		03ADE0971A13CA6600164BCB /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 03ADE0961A13CA6600164BCB /* Images.xcassets */; };
 		03ADE09A1A13CA6600164BCB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 03ADE0981A13CA6600164BCB /* Main.storyboard */; };
 		03ADE0A61A13CA6600164BCB /* StartingAreaTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 03ADE0A51A13CA6600164BCB /* StartingAreaTests.m */; };
+		03ADE0B11A13D77300164BCB /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 03ADE0B01A13D77300164BCB /* MainViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -32,14 +32,14 @@
 		03ADE08B1A13CA6600164BCB /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		03ADE08C1A13CA6600164BCB /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		03ADE08E1A13CA6600164BCB /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		03ADE0901A13CA6600164BCB /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		03ADE0911A13CA6600164BCB /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		03ADE0941A13CA6600164BCB /* StartingArea.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = StartingArea.xcdatamodel; sourceTree = "<group>"; };
 		03ADE0961A13CA6600164BCB /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		03ADE0991A13CA6600164BCB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		03ADE09F1A13CA6600164BCB /* StartingAreaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StartingAreaTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		03ADE0A41A13CA6600164BCB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		03ADE0A51A13CA6600164BCB /* StartingAreaTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = StartingAreaTests.m; sourceTree = "<group>"; };
+		03ADE0AF1A13D77300164BCB /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MainViewController.h; path = ../MainViewController.h; sourceTree = "<group>"; };
+		03ADE0B01A13D77300164BCB /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MainViewController.m; path = ../MainViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,10 +81,10 @@
 		03ADE0881A13CA6600164BCB /* StartingArea */ = {
 			isa = PBXGroup;
 			children = (
+				03ADE0B01A13D77300164BCB /* MainViewController.m */,
+				03ADE0AF1A13D77300164BCB /* MainViewController.h */,
 				03ADE08B1A13CA6600164BCB /* AppDelegate.h */,
 				03ADE08C1A13CA6600164BCB /* AppDelegate.m */,
-				03ADE0901A13CA6600164BCB /* ViewController.h */,
-				03ADE0911A13CA6600164BCB /* ViewController.m */,
 				03ADE0961A13CA6600164BCB /* Images.xcassets */,
 				03ADE0981A13CA6600164BCB /* Main.storyboard */,
 				03ADE0931A13CA6600164BCB /* StartingArea.xcdatamodeld */,
@@ -218,10 +218,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				03ADE0921A13CA6600164BCB /* ViewController.m in Sources */,
 				03ADE08F1A13CA6600164BCB /* main.m in Sources */,
 				03ADE0951A13CA6600164BCB /* StartingArea.xcdatamodeld in Sources */,
 				03ADE08D1A13CA6600164BCB /* AppDelegate.m in Sources */,
+				03ADE0B11A13D77300164BCB /* MainViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
