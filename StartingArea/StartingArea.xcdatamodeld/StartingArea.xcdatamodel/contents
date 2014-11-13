@@ -1,8 +1,19 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="6252" systemVersion="14A389" minimumToolsVersion="Automatic" macOSVersion="Automatic" iOSVersion="Automatic">
     <entity name="Click" syncable="YES">
+        <attribute name="attackPowers" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="attackValues" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="damagePowers" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="damageValues" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="defensePowers" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="defenseValues" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="experience" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="movementPowers" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="movementValues" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="pointValue" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="rarity" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="teamAbility" optional="YES" attributeType="String" syncable="YES"/>
     </entity>
     <entity name="Set" syncable="YES">
         <attribute name="modernAge" optional="YES" attributeType="Boolean" syncable="YES"/>
@@ -10,7 +21,7 @@
         <attribute name="releaseDate" optional="YES" attributeType="Date" syncable="YES"/>
     </entity>
     <elements>
-        <element name="Click" positionX="-63" positionY="-18" width="128" height="75"/>
+        <element name="Click" positionX="-63" positionY="-18" width="128" height="240"/>
         <element name="Set" positionX="-54" positionY="9" width="128" height="90"/>
     </elements>
 </model>

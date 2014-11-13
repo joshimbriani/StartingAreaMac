@@ -10,7 +10,8 @@
 
 @interface MainViewController ()
 @property (strong) IBOutlet NSTableView *heroclixTV;
-@property (nonatomic) NSArray *test;
+@property (nonatomic) NSArray *hcHardCode;
+@property (weak) IBOutlet NSTextField *name;
 
 @end
 
@@ -20,7 +21,16 @@
     [super viewDidLoad];
     // Do view setup here.
     
-    [self setTest: @[@"Test", @"test2"]];
+    //Temporarily hard code some heroclix in here
+    
+    NSDictionary *hc1 = @{@"name" : @"Spider-Man", @"pointValue" : @56};
+    
+    NSDictionary *hc2 = @{@"name" : @"Superman", @"pointValue" : @200};
+    
+    NSDictionary *hc3 = @{@"name" : @"Wolverine", @"pointValue" : @100};
+    
+    [self setHcHardCode:@[hc1, hc2, hc3]];
+    
     [[self heroclixTV] setDelegate:self];
     [[self heroclixTV] setDataSource:self];
 }
@@ -31,20 +41,25 @@
 }
 
 -(NSInteger) numberOfRowsInTableView:(NSTableView *)tableView {
-    return self.test.count;
+    return self.hcHardCode.count;
 }
 
 -(NSView *) tableView:(NSTableView *)tableView viewForTableColumn:(NSTableColumn *)tableColumn row:(NSInteger)row {
-    NSTextField *result = [tableView makeViewWithIdentifier:@"MyView" owner:self];
-    if (result == nil) {
-        result = [[NSTextField alloc] initWithFrame:NSMakeRect(1, 1, 1, 1)];
-        [result setBezeled:NO];
-        result.identifier = @"MyView";
+    NSTableCellView *result = [tableView makeViewWithIdentifier:tableColumn.identifier owner:self];
+    
+    if ([tableColumn.identifier isEqualToString:@"hcRow"]) {
+        result.textField.stringValue = [self.hcHardCode objectAtIndex:row][@"name"];
+        return result;
     }
-    
-    result.stringValue = [self.test objectAtIndex:row];
-    
+
     return result;
+}
+
+-(void) tableViewSelectionDidChange:(NSNotification *)notification {
+    
+    NSInteger selectedRow = [self.heroclixTV selectedRow];
+    self.name.stringValue = [self.hcHardCode objectAtIndex:selectedRow][@"name"];
+    
 }
 
 @end
